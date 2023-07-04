@@ -1,0 +1,17 @@
+{
+  "PORT": "4000",
+  "mongoPath": "mongodb+srv://DiscordBOT:3eIyMey28DVsJ0td@cluster0.7bzas.mongodb.net/Enkla",
+  "redisPath": "redis://default:iD8Bgn5MZrdfPXhKrbJMBy4IO0ZXas5w@redis-10223.c135.eu-central-1-1.ec2.cloud.redislabs.com:10223",
+  "mysqlPath": "",
+  "mysqlInfo": {
+    "host": "sql7.freemysqlhosting.net",
+    "user": "sql7629082",
+    "post": "3306",
+    "password": "G1W7PiBbm4",
+    "database": "sql7629082"
+  },
+  "serviceEmail": "enkla.service@gmail.com",
+  "servicePassword": "xjmacsuyhlwpdxta",
+  "frontendURL": "http://localhost:3000",
+  "websiteLink": "enkla-social.com"
+}
