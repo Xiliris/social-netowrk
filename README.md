@@ -3,14 +3,14 @@
 ## ▶️ Features ◀️
 ### 👉🏼 Login and Enjoy engaging with other posts
 
-## ▶️ Tools ◀️
+## ▶️ Frontend ◀️
 ### 👉🏼 HTML, CSS, JS
 ### 👉🏼 React JS
 ### 👉🏼 React Router DO
 ### 👉🏼 React Helmet
 ### 👉🏼 SASS
 ### 👉🏼 Universal Cookies
-
+## ▶️ Backend ◀️
 ### 👉🏼 Node JS
 ### 👉🏼 Express
 ### 👉🏼 Body Parser
@@ -18,6 +18,6 @@
 ### 👉🏼 Multer
 ### 👉🏼 Node Mailer
 ### 👉🏼 Mongoose
-
+## ▶️ Databases ◀️
 ### 👉🏼 Mongo DB
 ### 👉🏼 Redis
