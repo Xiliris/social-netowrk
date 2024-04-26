@@ -1,9 +1,9 @@
 {
-  "PORT": "4000",
-  "mongoPath": "mongodb+srv://Application:oN2ctZ0iGBxAOVSW@cluster0.7bzas.mongodb.net/Enkla?retryWrites=true&w=majority&appName=Cluster0",
-  "redisPath": "redis://default:ZIWe5fudtbnw0h83amrxLyjR7hAPLwtX@redis-19453.c250.eu-central-1-1.ec2.redns.redis-cloud.com:19453",
-  "serviceEmail": "enkla.service@gmail.com",
-  "servicePassword": "xjmacsuyhlwpdxta",
-  "frontendURL": "http://localhost:3000",
-  "websiteLink": "enkla-social.com"
+  "PORT": "",
+  "mongoPath": "",
+  "redisPath": "",
+  "serviceEmail": "",
+  "servicePassword": "",
+  "frontendURL": "",
+  "websiteLink": ""
 }
