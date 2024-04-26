@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const userSchema = require("../../schemas/userSchema");
+const profileSchema = require("../../schemas/profileSchema");
 
 const errorMessages = {
   missingEmail: "Email with that code not found.",
@@ -24,6 +25,21 @@ router.get("/:code", async (req, res) => {
       {
         code,
         active: true,
+      }
+    );
+
+    await profileSchema.findOneAndUpdate(
+      {
+        email: userData.email,
+      },
+      {
+        email: userData.email,
+        username: userData.username,
+        avatar: "https://www.w3schools.com/w3images/avatar2.png",
+        friends: [],
+      },
+      {
+        upsert: true,
       }
     );
     const { email, username } = userData;

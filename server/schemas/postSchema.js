@@ -12,6 +12,7 @@ const reqNumber = {
 
 const postSchema = mongoose.Schema({
   username: reqString,
+  email: reqString,
   image: reqString,
   likes: reqNumber,
   dislikes: reqNumber,
@@ -19,6 +20,14 @@ const postSchema = mongoose.Schema({
   comment: reqString,
   date: {
     type: Date,
+    required: true,
+  },
+  userInteractionLike: {
+    type: Array,
+    required: true,
+  },
+  userInteractionDislike: {
+    type: Array,
     required: true,
   },
 });

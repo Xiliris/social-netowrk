@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const userSchema = require("../../schemas/userSchema");
+const profileSchema = require("../../schemas/profileSchema");
 const { redisClient } = require("../../loadRedisDatabase");
 
 const errorMessages = {
@@ -33,9 +34,17 @@ router.post("/", async (req, res) => {
       return;
     }
 
+    const userProfileData = await profileSchema.findOne({ email: user.email });
+
+    if (!userProfileData) {
+      res.status(404).json({ error: errorMessages.missingUser });
+      return;
+    }
+
     const userProfile = {
-      username: user.username,
-      email: user.email,
+      username: userProfileData.username,
+      email: userProfileData.email,
+      avatar: userProfileData.avatar,
     };
 
     res.status(200).json(userProfile);
